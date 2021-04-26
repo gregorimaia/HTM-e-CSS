@@ -1,53 +1,64 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-be">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Outras Formatações</title>
+    <title>Listas</title>
 </head>
 <body>
-    <h1>Outras Formatações</h1>
-        <h2>Código-fonte</h2>
-            <h3>Sem a Tag code</h3>
-            <p>O comando document.getElementById('teste') é escrito em linguagem JavaScript.</p>
-            <h3>Com a Tag code</h3>
-            <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript.</p>
-        <h2>Código Python</h2>
-            <h3>Com apenas a Tag code</h3>
-            <p>
-            <code>
-                num = int(input('Digite um número:'))
-                if num % 2 == 0:
-                    print(f'O número {num} é PAR')
-                else:
-                    print(f'O número é ÍMPAR)
-                print('Fim')
-            </code>
-            </p>
-            <h3>Com a Tag code envelopada pela Tag pre </h3>
-            <p>
-            <pre>
-                <code>
-                    num = int(input('Digite um número:'))
-                    if num % 2 == 0:
-                        print(f'O número {num} é PAR')
-                    else:
-                        print(f'O número é ÍMPAR')
-                    print('Fim')
-                </code>
-            </pre>
-            </p>
-        <h2>Citações simples: Tag q</h2>
-        <p>Como diria o pai de um amigo: <q>O computdor é um burro muito rápido.</q></p>
-        <h2>Citações completas: Tag blockquote</h2>
-        <p>Segundo Joaquim B. de Souza, no seu livro HTML Para Iniciantes:
-            <blockquote cite="https://www.google.com.br/books/edition/Aprenda_Html_Para_Iniciantes/IuVxDwAAQBAJ?hl=pt-BR&gbpv=1&dq=html&pg=PA14&printsec=frontcover"><q>...não é possível fazer nada na Internet quando o assunto é programação sem conhecer a linguagem HTML - Hypertext Markup Language.</q></blockquote>
+    <h1>Trabalhando com Listas</h1>
+        <h2>Listas Ordenadas: Tag ol</h2>
+        <p>
+            <ol>
+                <li>Projetar</li>
+                <li>Considerar</li>
+                <li>Testar</li>
+                <li>Corrigir</li>
+                <li>Reconsidera</li>
+                <li>Testar novamente</li>
+                <li>Legalizar</li>
+                <li>Por em prática</li> <!--A partir do HTML5 o fechamento com /li se tornou opcional se preferir deixar o código mais limpo.-->
+            </ol>
         </p>
-        <h2>Abreviações: Tag abbr</h2>
-        <p>Estou estudando <abbr title="Hypertext Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>.</p>
-        <h2>Texto Invertido: Tag bdo</h2>
-        <p><bdo dir="ltr">Estou aprendendo HTML e CSS.</bdo></p>
-        <p><bdo dir="rtl">Estou aprendendo HTML e CSS.</bdo></p>
+        <p>
+            <ol type="A"> <!---Podemos mudar o índice de cada íten na lista.-->
+                <li>Projetar</li>
+                <li>Considerar</li>
+                <li>Testar</li>
+                <li>Corrigir</li>
+                <li>Reconsidera</li>
+                <li>Testar novamente</li>
+                <li>Legalizar</li>
+                <li>Por em prática</li> <!--A partir do HTML5 o fechamento com /li se tornou opcional se preferir deixar o código mais limpo.-->
+            </ol>
+        </p>
+        <p>
+            <ol type="i" start="4"> <!--Podemos começar da metade da lista.-->
+                <li>Projetar</li>
+                <li>Considerar</li>
+                <li>Testar</li>
+                <li>Corrigir</li>
+                <li>Reconsidera</li>
+                <li>Testar novamente</li>
+                <li>Legalizar</li>
+                <li>Por em prática</li> <!--A partir do HTML5 o fechamento com /li se tornou opcional se preferir deixar o código mais limpo.-->
+            </ol>
+        </p>
+        <h2>Listas não Ordenadas: Tag ul</h2>
+        <ul>
+            <li>Comprar</li>
+            <li>Vender</li>
+            <li>Liderar</li>
+            <li>Ponderar</li>
+            <li>Reunir</li>
+        </ul>
+        <ul type="square"> <!--Podemos esolher disc, circle ou square para marcação de cada ítem.-->
+            <li>Comprar</li>
+            <li>Vender</li>
+            <li>Liderar</li>
+            <li>Ponderar</li>
+            <li>Reunir</li>
+        </ul>
 </body>
 </html>
