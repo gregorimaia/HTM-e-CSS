@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>A imagem a seguir varia de tamanho de acordo com o tamanho da janela do navegador ou o dispositivo utlizado para vizualizar a página do site.</p>
+    <picture> <!--Importante a ordem do código tem de ser essa para dar certo: Primeiro a Imagem Pequena, Segundo a Média e Terceiro a Grande.-->
+        <source media="(max-width: 750px )" srcset="imagens/carroG.jpg" type="image/jpg">
+        <source media="(max-width:1050px )" srcset="imagens/carroGG.jpg" type="image/jpg"> <!--Essa tag serve para acrescentarmos a mesma imagem de tamanho variado para abrir o site em janelas de tamanhos diferentes para que a tela nao precise ser rolada para o lado.-->
+        <img src="imagens/carroXG.jpg" alt="Imagem flexível">
+    </picture>
+    <p><a href="https://www.youtube.com/watch?v=cAgkwPWE4hU&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n&index=32">Acesse essa aula.</a></p>
+</body>
+</html>
