@@ -14,9 +14,19 @@
         <source media="(max-width:1050px )" srcset="imagens/carroGG.jpg" type="image/jpg"> <!--Essa tag serve para acrescentarmos a mesma imagem de tamanho variado para abrir o site em janelas de tamanhos diferentes para que a tela nao precise ser rolada para o lado.-->
         <img src="imagens/carroXG.jpg" alt="Imagem flexível">
     </picture>
-    
+    <h1>Acrescentando áudio.</h1>
+    <p>Aprendendo a acrescentar som na página.</p>
+    <audio src="midia/countrysong.mp3" autoplay controls></audio> <!--autoplay é para a musica tocar automaticamente, controls é para aparecer os botões de play e stop na página. Formatos de áudios compatíveis BP3(mpeg) WAV(Muito pesado) OGG-->
+    <h1>Outra forma de acrescentar áudio.</h1>
+    <audio preload="auto" autoplay loop>
+        <source src="midia/countrysong.mp3" type="audio/mpeg">
+    </audio>
+    <!--Pode ser que seu navegador não seja compatível com algum formato de áudio, por isso tem que tentar com WAV OGG-->
+    <h1>Podemos fazer dowload dos áudios também.</h1>
+    <a href="midia/countrysong.mp3">Baixe aqui.</a>
     <ul>
         <li><a href="https://www.youtube.com/watch?v=cAgkwPWE4hU&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n&index=32" target="_blank" rel="external">Acesse essa aula.</a></li>
+        <li><a href="https://www.youtube.com/watch?v=4OZYsFl-J9s&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n&index=33">Acescentar áudio.</a></li>
     </ul>
 </body>
 </html>
