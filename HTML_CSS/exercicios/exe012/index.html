@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acrescentando vídeos em HTML5.</title>
+</head>
+<body>
+    <h1>
+        Vídeos hospetados localmente.
+        <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    <!--esse modelo para carregar os vídeos separados
+        <video src="midia/Meuvideo-1.m4v" width="500" controls></video>
+        <video src="midia/Meuvideo-1.webm" width="500" controls></video>
+        <video src="midia/meuvideo.mp4" width="500" controls></video>
+     -->
+     <video width="500" controls poster="imagens/WhatsApp Image 2019-05-18 at 10.03.55.png">
+         <source src="midia/Meuvideo-1.webm" type="video/mp4">
+         <source src="midia/Meuvideo-1.m4v" type="video/m4v">
+         <source src="midia/meuvideo.mp4" type="video/mp4">
+         <source src="midia/meuvideo.ogv" type="video/ogv">
+     </video>
+     <!--Nesse caso o vídeo a carregar no site vai começar do primeiro em diante de acordo com a compatibilidade do site.-->
+    </h1>
+    <ul>
+        <li>
+            <a href="https://www.youtube.com/watch?v=DjOSM72cYac&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n&index=34">Aula convertedo vídeo.</a>
+        </li>
+        <li>
+            <a href="https://www.youtube.com/watch?v=TCeyIwFGkYo&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n&index=35">Aula adicionando vídeos.</a>
+        </li>
+    </ul>
+</body>
+</html>
